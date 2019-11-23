@@ -1,0 +1,107 @@
+body{
+    background-image:url("index img/sam-wyllie-sword-and-shield.jpg")
+}
+
+header{
+    display: grid;
+    height: 250px;
+    grid-template-rows: 50px 25px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-image: url("Index img/headerbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#logo{
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: center;
+    justify-self: center;
+    z-index: 1;
+}
+
+#logo img{
+    height: 350px;
+    margin: 1px;
+   
+}
+
+#left{
+    grid-row: 1 / span 3;
+    grid-column: 1;
+    align-self: center;
+    justify-self: left;
+    z-index: 0;
+}
+#right{
+    grid-row: 1 / span 3;
+    grid-column: 3;
+    align-self: center;
+    justify-self: right;
+    z-index: 0;
+}
+
+#left img{
+    height: 250px;
+}
+
+#right img{
+    height: 250px;
+}
+
+.jumbotron{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 566.933px 199.067px 35px;
+    height: 592px;
+}
+
+.jumbotron video{
+    width: 100%;
+    min-width: 100%;
+    right: 0;
+    bottom: 0;
+    margin: 0px 0px 0px 0px;
+    grid-column: 1;
+    grid-row:1;
+}
+.pvid h1 p{
+        grid-row: 2 / 4;
+        grid-column: 1;
+}
+
+.pvid{       
+    grid-row: 2/3;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    height: 233px ;
+}
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  #join {
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 3(1fr);
+      height: 500px;
+  }
+  #join a{
+      grid-column: 2;
+      grid-row: 1;
+  }
+  #join a img{
+    height: 500px;
+  }

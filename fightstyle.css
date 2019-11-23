@@ -1,0 +1,152 @@
+body{
+    background-image: url("characters img/2019111121303700_3C66B776DB1AA06323037049FACD96D3.0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header{
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 100px 50px;
+    height: 150px;
+}
+
+header img{
+    grid-row: 1;
+}
+
+header h1{
+    grid-row: 2;
+    text-align: center;
+}
+
+.arena {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 50px 435px 200px;
+    background:rgba(0, 0, 0, 0.5) ;
+    border-radius: 5%;
+    border: black solid;
+}
+
+
+#plyrhp{
+    grid-row: 1;
+    grid-column: 1;
+    width: 500px;
+}
+
+#ophealth{
+    grid-row: 1;
+    grid-column: 3;
+    width: 500px;
+    transform: rotate(180deg);    
+}
+
+.dices{
+    grid-row: 1;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#die{
+    grid-column: 1;
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    justify-self: left;
+}
+#die2{
+    grid-column: 2;
+    height: 50px;
+    width: 50px;
+    align-self: center;
+    justify-self: right;
+}
+
+#switch{
+    grid-column: 1 / span 2;
+    height: 50px;
+    align-self: center;
+    justify-self: center;
+    margin: 1px;
+}
+
+#switch:hover{
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+.menu{
+    grid-column: 2;
+    grid-row: 3;
+    display: grid;
+    grid-template-rows:1fr 1fr ;
+    grid-template-columns: 1fr auto 1fr;
+}
+
+#atk{
+    background-image: url("characters img/default.png");
+    border: none;
+    grid-row: 1;
+    grid-column: 2;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    justify-self: center;
+}
+
+#atk:hover{
+    background-image: url("characters img/default2.png");
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+#def{
+    background-image: url("characters img/default3.png");
+    border: none;
+    grid-row: 2;
+    grid-column: 2;
+    background-size: cover;
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    justify-self: center;
+}
+
+#def:hover{
+    background-image: url("characters img/default4.png");
+    transform: scale(1.5);
+    transition: 0.5s;
+}
+
+#roll{
+    background-image: url("characters img/DICE.png");
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    grid-row: 1 / 3;
+    grid-column: 1; 
+    align-self: center;
+    justify-self: center;
+}
+
+#plyr{
+    grid-column: 1;
+    grid-row: 2;
+    height: 500px;
+    width: 470.1px;
+}
+
+#opp{
+    grid-column: 3;
+    grid-row: 2;
+    height: 500px;
+ 
+}
+

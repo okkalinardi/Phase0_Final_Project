@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Battle Time!</title>
+    <link href="fightstyle.css" type="text/css" rel="stylesheet">
+</head>
+
+<body onload="first()">
+    <header class='Battle'>
+        <img id="logo" src="index img/cooltext342169267859788.png" onclick="window.location.href='index.html';">
+        <h1 id="1" style="color: white;">Let's Battle!</h1>
+    </header>
+    <main>
+        <div class="arena">
+            <progress id="plyrhp" value="100" max="100"></progress>
+            <progress id="ophealth" value="100" max="100"></progress>
+            <div class="dices">
+                <img id="die" src="characters img/1.png">
+                <img id="die2" src="characters img/1.png">
+                <img id="switch" src="characters img/switch.png" onclick="first()">
+            </div>
+            <div class="menu">
+                <button id="atk" onclick="attack()"></button>
+                <button id="def" onclick="defend()"></button>
+            </div>
+            <img id="plyr" src="characters img/scorbunny.png">
+            <img id="opp" src="characters img/o1.png">
+        </div>
+        </div>
+    </main>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

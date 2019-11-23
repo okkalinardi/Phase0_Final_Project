@@ -1,0 +1,81 @@
+body{
+    background-image: url("Characters img/charabg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+}
+
+#pokeball{
+    height: 150px;
+}
+#choose{
+    height: 100px;
+}
+
+.pokemon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 50px 1fr;
+    height: 750px;
+}
+.pokemon img{
+    height: 300px;
+    align-self: center;
+    justify-self: center;
+}
+
+#scorbunny{
+    grid-column: 2;
+}
+#grookey{
+    grid-column: 3;
+}
+#sobble{
+    grid-column: 4;
+}
+
+.pokemon h2{
+    text-align: center;
+    font-size: 50px;
+}
+
+.pokemon p{
+    font-size: 30px;
+}
+
+#scorbunny:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    border-radius: 2%;
+}
+#grookey:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    border-radius: 2%;
+}
+#sobble:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    border-radius: 2%;
+}
+
+#scorchose{
+    background: none;
+    border: none;
+}
+
+#grochose{
+    background: none;
+    border: none;
+}
+#sobchose{
+    background: none;
+    border: none;
+}
